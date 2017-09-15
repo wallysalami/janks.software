@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+
+		<title>Cerberus</title>
+		<link rel="stylesheet" type="text/css" href="default.css" /> 
+
+		<script type="text/javascript" language="javascript" src="jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="jquery.carouFredSel-5.0.0-packed.js"></script>
+		<script type="text/javascript" language="javascript">
+		
+			$(function() 
+			{				
+				$('#foo2').carouFredSel(
+				{
+					auto: true,	
+					prev : 
+					{	
+						button	: "#foo2_prev",
+						key		: "left"
+					},
+					next : 
+					{ 
+					  	 button	: "#foo2_next",
+						 key	: "right"
+					},
+					pagination  : "#foo2_pag",					
+					scroll      : 
+					{
+            		 	 items        : 1,
+             			 duration     : 1000            			                                 			 
+        			} 
+				});					
+			});		
+			
+    		function showVideo()
+    		{
+    		   mydiv = document.getElementById( "videoDiv" );
+    		   myIframe = document.getElementById( "videoIframe" );
+    		   
+    		   if ( mydiv.style.visibility == "visible" )
+    		   {
+    		      mydiv.style.visibility = "hidden";
+    			  myIframe.style.display = "none";
+    		   } 
+    		   else
+    		   {
+    		      mydiv.style.visibility = "visible";
+    			  myIframe.style.display = "inline";
+    		   } 
+    		}	
+
+    		function showFAQ()
+    		{
+    		   mydiv = document.getElementById( "faqDiv" );
+    		   		   
+    		   if ( mydiv.style.visibility == "visible" )
+    		   {
+    		      mydiv.style.visibility = "hidden";
+    		   } 
+    		   else
+    		   {
+    		      mydiv.style.visibility = "visible";
+    		   } 
+    		}	
+		</script>
+
+	</head>
+	   
+    <body>    	
+	
+    	<div id="videoDiv" align="center">
+        	 <div id="backgroundDiv" onclick="showVideo()"></div>
+        	 <div id="contentDiv" style="display:table;background-color:transparent;" >				 	
+    	 	      <a href="javascript:showVideo()" style="float:right"><img src="img/close.png" width="30" height="30"></a>	  			  	          	 	  
+    			  <iframe id="videoIframe" type="text/html" width="800" height="480" src="http://www.youtube.com/embed/oPhlXel4Tc4" frameborder="1" style="display:none;float:left;">
+    			  </iframe>			  			  
+        	 </div>
+        </div>
+
+    	<div id="faqDiv" align="center">
+        	 <div id="backgroundDiv" onclick="showFAQ()"></div>
+
+    		 <div class="closeDiv">
+    		 	  <a href="javascript:showFAQ()" style="float:right;"><img src="img/close.png" width="30" height="30"></a>
+    		 </div>	
+
+        	 <div id="contentDiv2">				 			  	      							 			  				  			  			  
+    			   
+    			<div class="div1" align="left">
+                <br>			
+                <a class="a1" href="#question01">What is the purpose of this app?</a><br><br>
+                <a class="a1" href="#question02">Is Cerberus really safe?</a><br><br>
+                <a class="a1" href="#question03">I have lost my iPhone! Can someone hack my information?</a><br><br>
+                <a class="a1" href="#question04">Does Cerberus send my data to somewhere?</a><br><br>
+                <a class="a1" href="#question05">I forgot my password! Can I set a new one and retrieve my data?</a><br><br>
+                <a class="a1" href="#question06">But if I forgot my password or lose my device, will all the information be gone for good?</a><br><br>
+                <a class="a1" href="#question07">What are the differences between the free and the paid versions of Cerberus?</a><br><br>
+                <a class="a1" href="#question08">I have bought extra features via In-App Purchase. Do I have to pay again to install them in my other device?</a><br><br>
+                <a class="a1" href="#question09">[Paid Feature] How can I create or remove fields in my entries?</a><br><br>
+                <a class="a1" href="#question10">[Paid Feature] When I change a field of a category, all the entries are modified?</a><br><br>
+                <a class="a1" href="#question11">[Paid Feature] Why would I use the lock screen disguise?</a><br><br>
+                <a class="a1" href="#question12">[Paid Feature] What do the new protected profiles do?</a><br><br>
+                <a class="a1" href="#question13">[Paid Feature] Why does not my tab bar change its color when I change the theme?</a><br><br>
+                                        
+                <a class="a1" name="question01"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    What is the purpose of this app?
+                </question>
+                <br>
+                <div class="answer">
+                    Cerberus allows you to have all your private data always close, always protected. This brings many benefits like:<br>
+                    -- Remembering passwords from internet or bank accounts.<br>
+                    -- Having your credit card info when shopping online.<br>
+                    -- Keeping all your identity data, without having to carry your documents. You can even take pictures of each one.<br>
+                    -- Noting all the characteristics of your electronic devices, in case of failure or steal.<br>
+                    -- Having personal info of important people (like friends and relatives).<br>
+                    -- Creating secret notes.<br>
+                </div>
+
+                <a class="a1" name="question02"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    Is Cerberus really safe?
+                </question>
+                <br>
+                <div class="answer">
+                    Yes. Every time you leave the app or turn off the screen, your data is blocked and the password will be required when you return.
+                </div>
+                
+                
+                
+                <a class="a1" name="question03"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    I have lost my iPhone! Can someone hack my information?
+                </question>
+                <br>
+                <div class="answer">
+                    No. Cerberus has a technology called AES-128, the same used to encrypt secret documents of governments. Using it, your data is "scrambled" and only the password will turn it again in something readable. Since the password is not store in your device, a hacker will not be able to decipher the information.
+                </div>
+                                        
+                <a class="a1" name="question04"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                                
+                <question>
+                    Does Cerberus send my data to somewhere?
+                </question>
+                <br>
+                <div class="answer">
+                    No. Cerberus keeps all the information inside the device.<br>
+                    If you are using iTunes backup or iCloud, iOS may copy automatically all your data to your computer or Apple's servers. But do not worry: as explained above, everything will be unreadable without your password.
+                </div>
+                
+                
+                
+                <a class="a1" name="question05"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    I forgot my password! Can I set a new one and retrieve my data?
+                </question>
+                <br>
+                <div class="answer">
+                    No. This is a matter of security. As previously explained, only the password can decipher the data. If you completely forget it, the app must be deleted and reinstalled, and then the info must be retyped.<br>
+                    If you are using iTunes backup or iCloud, iOS may copy automatically all your data to your computer or Apple's servers. But do not worry: as explained above, everything will be unreadable without your password.
+                </div>                        
+                
+                <a class="a1" name="question06"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    But if I forgot my password or lose my device, will all the information be gone for good?
+                </question>
+                <br>
+                <div class="answer">
+                    Not necessarily. Cerberus stores information that is usually available in other places (your websites, cards, documents, etc). If the app data is unreachable, just look for it in the origin.
+                </div>
+                
+                
+                
+                <a class="a1" name="question07"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+
+                <question>
+                    What are the differences between the free and the paid versions of Cerberus?
+                </question>
+                <br>
+                <div class="answer">
+                    Both versions allow you to enter as many entries as you wish, with all the features discussed above.<br>
+                    However, the free version has an advertisement banner in the bottom and does not have the following extra features: creation of new fields and categories, color themes, disguise of the lock screen and multiple protected profiles. The paid version comes with all those features and has no advertisement.<br>
+                    Finally, it is important to note that the extra features can also be purchased inside the free version, avoiding the download of a new app.<br>
+                </div>
+                
+                
+                
+                <a class="a1" name="question08"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    I have bought extra features via In-App Purchase. Do I have to pay again to install them in my other device?
+                </question>
+                <br>
+                <div class="answer">
+                    No, you pay only once. Next time you try to purchase the feature in another device using the same Apple Id, the feature will be unlocked for free.
+                </div>
+                
+                
+                
+                <a class="a1" name="question09"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    [Paid Feature] How can I create or remove fields in my entries?
+                </question>
+                <br>
+                <div class="answer">
+                    Just go to the Options tab and select Categories and Fields. The screen that appears allows the creation and removal of categories. Tapping in a category, you will proceed to another screen where you can create, remove and rearrange the fields of its entries.<br>
+                    Note that, when a field is created, it will be empty and hidden in all entries. So, to access it and fill it, you need to edit the entry.
+                </div>
+                                        
+                <a class="a1" name="question10"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+
+                <question>
+                    [Paid Feature] When I change a field of a category, all the entries are modified?
+                </question>
+                <br>
+                <div class="answer">
+                    Yes. When you add, remove or rearrange fields, all the entries of that category are modified. This simplifies your data management.<br>
+                    But remember that filling the fields is optional and that empty fields do not appear outside the edition mode. Hence if you want a certain field to be only in an certain entry, fill it in that entry and leave it blank in the other ones.
+                </div>
+                                    
+                <a class="a1" name="question11"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    [Paid Feature] Why would I use the lock screen disguise?
+                </question>
+                <br>
+                <div class="answer">
+                    The disguise hides Cerberus' purpose in case someone else is using your device.<br>
+                    When someone enters the app, the lock screen is replaced by an image of a dog behind a fence with a sign. The text at the sign can be freely edited, without any mention of passwords. This gives the impression that Cerberus is just a silly app, without any use.<br>
+                    However, if you type the correct password at the sign, the data will be revealed once again.<br>
+                </div>
+                                        
+                <a class="a1" name="question12"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+
+                <question>
+                    [Paid Feature] What do the new protected profiles do?
+                </question>
+                <br>
+                <div class="answer">
+                    You can split your data in sets, each one protected by a different password. This allows you, for example, to separate your really confidential information (like passwords and cards) from less confidential information (like documents and objects).<br>
+                    Another interesting utility is to have a profile with fake data, in case you are "forced" to type your password.
+                </div>
+                                        
+                <a class="a1" name="question13"></a>
+                <br>
+                <hr class="hr1"/>
+                <br>
+                
+                <question>
+                    [Paid Feature] Why does not my tab bar change its color when I change the theme?
+                </question>
+                <br>
+                <div class="answer">
+                    If your device is running a system prior to iOS 5.0, the tab bar cannot change its color. If it is possible, update your system using iTunes.
+                </div>
+                
+                <br>
+            
+            </div>
+    			  	          	 	  
+        	 </div>
+        </div>
+	
+    	<section id="page">    
+            <header>             
+                <hgroup>
+                    <h1>&nbsp; </h1>                    
+                </hgroup>
+                               
+				<!--			    
+                <nav> 
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../consultoria/index.html">Consultoria</a></li>
+                        <li><a class="actual" href="../cerberus/index.html">Mobile</a></li>
+						<li><a href="../nuvem/index.html">Nuvem</a></li>
+						<li><a href="../cases/index.html">Cases</a></li>
+						<li><a href="../empresa/index.html">Empresa</a></li>
+                    </ul>
+                </nav>
+				-->            
+            </header>
+			            
+            <section id="articles"> <!-- A new section with the articles -->
+
+				<h4>Cerberus</h4>
+				<!-- Carrusel -->
+				
+				<div class="list_carousel">
+				<ul id="foo2">
+					<img src="img/cerberusBanner2_en.png" alt="Cerberus" style="height:400px"/>
+					<img src="img/cerberusBanner3_en.png" alt="Cerberus" style="height:400px"/>
+					<img src="img/cerberusBanner4_en.png" alt="Cerberus" style="height:400px"/>
+					<img src="img/cerberusBanner6_en.png" alt="Cerberus" style="height:400px"/>
+					<img src="img/cerberusBanner5_en.png" alt="Cerberus" style="height:400px"/>
+				</ul>
+				
+				<div class="clearfix"></div>		
+				
+				<!--								
+				<a class="a1" class="prev" id="foo2_prev" href="#"><span>prev</span></a>
+				<a class="a1" class="next" id="foo2_next" href="#"><span>next</span></a>
+				-->
+								
+				<div class="pagination" id="foo2_pag"></div>
+				
+				</div>                			                                                      		   
+                    <div class="articleBody clear">                    
+                    	<figure> 
+	                    	<a href="javascript:showFAQ()"><img src="img/box4_en.png" width="300" height="200" /></a>
+                        </figure>				
+                       	<figure class="margen"> 
+	                    	    <a href="javascript:showVideo()"><img src="img/box2_en.png" width="300" height="200" /></a>
+                        </figure>
+                        <figure class="margen"> 		
+								<div >	
+  	                    	    <img src="img/box3_en_1.png" style="width:300px; height:54px"/>
+								</div>
+								<div  >
+								<a href="http://itunes.apple.com/us/app/cerberus-private-data-protected/id459449492?mt=8">
+								<img src="img/box3_en_2.png" style="width:300px; height:71px"/></a>
+								</div>
+								<div>
+								<a href="http://itunes.apple.com/us/app/cerberus-pro-private-data/id488126118?mt=8">
+								<img src="img/box3_en_3.png" style="width:300px; height:75px"/></a>
+								</div>
+                        </figure>                        
+                    </div>               
+            </section>							            
+		</section>         
+    </body>
+</html>

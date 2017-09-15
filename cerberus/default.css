@@ -1,0 +1,533 @@
+		
+.list_carousel 
+{            
+ 	padding: 5px 0px 0px 0px;
+    position: relative;
+    /*box-shadow:0 0 20px #a0a0a0;*/
+}
+                                    
+.list_carousel ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;                            
+}
+            
+.list_carousel li 
+{
+	font-size: 40px;
+	color: #999;
+	text-align: center;
+	background-color: #eee;
+	border: 5px solid #999;
+	width: 50px;
+	height: 500px;
+	padding: 0;
+	margin: 6px;
+	display: block;
+	float: left;
+}
+
+.list_carousel img 
+{
+	border: 2px solid #ccc;
+	background-color: white;
+	padding: 0px;
+	margin-top: 3px;
+	display: block;
+	float:left;
+	width: 976px;
+	Height: 159px;   
+                              
+    //box-shadow:0 0 5px #a0a0a0;       
+}
+
+.list_carousel img:hover 
+{
+	border: 2px solid #bcba81;
+}
+            
+.clearfix 
+{
+	float: none;
+	clear: both;
+}
+            			                       
+a.prev, 
+a.next 
+{	           
+	width: 40px;
+	height: 80px;
+	display: block;
+	position: absolute;
+	top: 165px;
+}
+            
+a.prev 
+{
+    background: url(img/prev.png) no-repeat transparent;
+    left: 0px;
+	background-position: 0 0; 
+}
+            
+a.next 
+{	
+    background: url(img/next.png) no-repeat transparent;
+    right: 0px;
+  	background-position: 0 0; 
+}
+            
+a.prev.disabled, 
+a.next.disabled 
+{
+	cursor: default;
+}
+
+a.prev span, 
+a.next span 
+{
+	display: none;
+}
+.pagination 
+{
+	text-align: center;
+}
+.pagination a 
+{
+	background: url(img/dots.png) no-repeat transparent;
+	width: 15px;
+	height: 15px;
+	margin: 0 1px 0 0;
+	display: inline-block;
+}
+            
+.pagination a:hover 
+{
+	background-position: 0 -15px;	            
+}
+.pagination a.selected 
+{
+	background-position: 0 -30px;
+	cursor: default;
+}
+.pagination a span 
+{
+	display: none;
+}
+            
+
+*{
+	margin:0;
+	padding:0;
+}
+
+header, footer, article, section, hgroup, nav, figure
+{	
+	display:block;
+}
+
+body
+{
+	
+	font-size:0.825em;
+    color:#0;
+    background-color:#e9e9eb;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#page
+{
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+
+/* Headings: */
+h1, h2, h3
+{
+	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+h1
+{
+	font-size:25px;
+    padding-left:70px;
+    margin-top:13px;
+    color:#bcba81;
+    background:url(img/logo.png) left 30% no-repeat
+}
+
+h3
+{
+	/* The slogan text */
+    /*color:#bcba81;*/
+    color: #6588AF;
+	font-family:Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0.5em 0.5em;
+}
+
+h2
+{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+    text-align:center;
+}
+
+h4
+{
+	font-size:2.5em;
+    font-weight:bold;
+	letter-spacing:0.01em;
+    text-align:left;
+    margin-top:20px;
+}
+
+p
+{
+	line-height:1.5em;
+	padding-bottom:1em;
+    text-align:justify;
+    margin:20px 20px 20px 20px;
+}
+
+a, a:visited 
+{
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+a img
+{
+	border:none;
+}
+
+nav
+{
+	background:url(img/menu_bar.png) repeat-x 100% #f8f8f8;    
+	padding:0 5px;
+	position:absolute;
+	right:0;
+    top:-0em;	
+	-webkit-box-shadow:2px 2px 2px 1px #a0a0a0; 
+    box-shadow:2px 2px 2px 1px #a0a0a0;   
+}
+
+/* The clearfix hack to clear the floats: */
+.clear:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+nav ul li
+{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited
+{
+	color:#fff;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:0px 0px 0px 40px;
+	padding:4px 10px 4px;
+}
+
+nav ul li a.actual
+{ 	
+	display:block;
+	float:left;
+	margin:0px 0px 0px 40px;
+    background-color:#333333;
+}
+
+nav ul li a:hover
+{
+	text-decoration:none;
+	background-color:#333333;
+}
+
+/*nav, article, nav ul li a*/
+/*nav,*/
+article  
+{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+/* lines */
+.line
+{
+	/* The dividing line: */
+	height:1px;
+    /*
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+    */
+	background-color:#a0a0a0;
+	border-bottom:1px solid #fff;
+	/*margin:0.5em 0;*/
+    margin-top:5px;
+	overflow:hidden;
+}
+
+article .line
+{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+/* Article */
+article
+{
+	background-color:#fff;
+    border:1px solid #a0a0a0;
+    border-bottom:1px solid #a0a0a0;
+	margin:1em 0;
+	/*padding:0px;*/
+	
+	/*text-shadow:0 2px 0 black;*/
+    
+    /*-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;*/
+	-webkit-box-shadow:0 0 10px #a0a0a0;
+    box-shadow:0 0 10px #a0a0a0;
+    
+}
+
+/* Figure */
+figure
+{
+    background-color:#fff;
+	border:1px solid #a0a0a0;
+	float:left;
+	height:200px;
+	margin-left:0px;
+    margin-top:15px;
+	overflow:hidden;
+	width:318px;
+    box-shadow:0 0 20px #a0a0a0;
+    -webkit-box-shadow:0 0 20px #a0a0a0;
+}
+
+figure:hover
+{
+    /*border:2px solid #636363;*/
+    border:1px solid #bcba81;
+	-moz-box-shadow:0 0 3px #bcba81;
+	-webkit-box-shadow:0 0 3px #bcba81;
+	box-shadow:0 0 20px #bcba81;
+}
+
+figure.margen
+{
+   margin-left:10px;
+}
+
+figure img
+{
+	/*margin-left:-6px;*/
+    height:200px;
+    width:318px;
+}
+
+/* Footer styling: */
+
+footer
+{
+	margin-bottom:10px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer .line
+{
+    margin-top:15px;
+
+}
+
+footer p
+{
+	/*margin-bottom:-1.5em;*/
+	position:relative;
+}
+
+footer a,footer a:visited
+{
+	color:#a0a0a0;
+	background-color:#e9e9eb;
+	display:block;
+	padding:2px 4px;
+	z-index:0;
+	position:relative;
+}
+
+footer a:hover
+{
+	text-decoration:none;
+    color:#000000;
+}
+
+footer a.izquierda
+{
+	float:left;
+}
+
+footer a.derecha
+{
+	float:right;
+}
+
+            
+.two_columns {float:left; display:inline; margin-right:0px; width:485px}
+.tree_columns {float:left; display:inline; margin-right:30px; width:320px}
+.ul_margin { margin-left:50px }
+#content .last_column {margin-right:0}            
+
+
+#videoDiv 
+{ 
+   margin:0px; 
+   position:absolute; 
+   width: 100%; 
+   height: 100%; 
+   align:center; 
+   vertical-align:bottom;
+   z-index:2;
+   visibility:hidden; 
+}
+
+#faqDiv 
+{ 
+   margin:0px; 
+   position:absolute; 
+   width: 100%; 
+   height: 100%; 
+   align:center; 
+   vertical-align:bottom;
+   z-index:2;
+   visibility:hidden; 
+}
+
+#faqContent
+{
+   float:left;
+   overflow:auto;
+   width:800px;
+   height:200px;
+   background-color:$000;
+}
+
+#backgroundDiv 
+{  
+   margin:0px; 
+   position:absolute; 
+   width: 100%; 
+   height: 100%; 
+   align:center; 
+   z-index:3; 
+   background-color:#000000; 
+   opacity:0.5;
+   vertical-align:bottom;
+}
+
+#contentDiv 
+{    
+   margin:100px; 
+   position:relative; 
+   width:800px; 
+   height:480px;
+   overflow:auto; 
+   align:center; 
+   z-index:4;
+   background-color:#FFFFFF;    
+}
+
+#contentDiv2 
+{    
+   margin-top:0px; 
+   position:relative; 
+   width:900px; 
+   height:480px;
+   overflow:auto; 
+   align:center;    
+   z-index:4;
+   background-color:#FFFFFF;    
+}
+
+.closeDiv
+{
+   margin-top:100px; 
+   position:relative; 
+   width:900px; 
+   height:30px; 
+   align:center;
+   
+   z-index:4;
+   background-color:transparent;      
+}
+
+#div1
+{
+    margin: 5%;
+}
+
+.a1
+{
+       font-size: 16px;
+       text-decoration: none;
+       text-align:left;
+       margin-left:25px;
+       margin-top:10px; 
+       height:50px;      
+}
+
+question
+{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    margin-left:25px;
+}
+
+.answer 
+{
+    font-size: 16px;
+    text-align: justify;
+    margin-left:25px;
+    margin-top:25px;
+    margin-right:25px;
+}
+
+.hr1
+{
+    color: #000000;
+    background-color: #000000;
+    height: 2px;
+    width:80%;
+    margin-left:10%;
+    margin-bottom:10px;
+}
+
