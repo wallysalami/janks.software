@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="100" height="100" viewBox="0, 0, 100, 100">
+  <g id="Background">
+    <rect x="0" y="0" width="100" height="100" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_1">
+    <path d="M-2.424,-2.687 L102.318,-2.687 L102.318,101.792 L-2.424,101.792 L-2.424,-2.687 z" fill="#FFD429"/>
+    <path d="M36.574,59.754 L14.621,50.633 L14.621,46.277 L36.574,37.156 L36.574,42.312 L21.379,48.445 L36.574,54.559 z" fill="#EE7F09"/>
+    <path d="M59.504,34.559 L44.777,62.352 L39.543,62.352 L54.25,34.559 z" fill="#EE7F09"/>
+    <path d="M84.406,50.633 L62.453,59.754 L62.453,54.559 L77.648,48.445 L62.453,42.312 L62.453,37.156 L84.406,46.277 z" fill="#EE7F09"/>
+    <text transform="matrix(1, 0, 0, 1, 49.514, 49.5)" display="none">
+      <tspan x="-37.256" y="12.5" font-family="GillSans-Bold" font-size="40" fill="#EE7F09">&lt;/&gt;</tspan>
+    </text>
+  </g>
+</svg>

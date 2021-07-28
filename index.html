@@ -7,17 +7,17 @@
 
     <body>
         <div class='container-to-centralize'>
-            <header id='contact-card' class='card'>
+            <header id='contact-card'>
                 <img id='profile-image' src='images/profile.png'>
                 <address>
                     <h1>Jan K. S.</h1>
                     <dl>
-                        <dt>iOS and Web Developer<dt>
+                        <dt>Developer</dt>
                         <dd>
                             <a href='mailto:developer@janks.software'>developer@janks.software</a>
                         </dd>
 
-                        <dt>Programming Teacher at PUC-Rio<dt>
+                        <dt>Programming Lecturer at PUC-Rio</dt>
                         <dd>
                             <a href='mailto:janks@puc-rio.br'>janks@puc-rio.br</a>
                         </dd>
@@ -27,26 +27,151 @@
         </div>
 
         <div class='container-to-centralize'>
-            <section class='card portifolio-section'>
-                <h1>iOS Apps</h1>
+            <section class='portifolio-section'>
+                <h2 class='portifolio-section-title'>
+                    <hr>
+                    <span>iOS Apps</span>
+                </h2>
                 <ul class='portifolio-section-list'>
-                    <li class='portifolio-section-item'>
-                        <img class='app-icon' src='images/paper-emoji-icon.svg'>
-                        <div>
-                            <h1>Paper Emoji</h1>
-
-                            <a href='https://itunes.apple.com/app/paper-emoji/id1146948534'>
-                                <img class='app-store-icon' src='images/app-store-icon.svg'>
-                            </a>
+                    <li>
+                        <div class='app-data'>
+                            <img class='app-icon' src='images/cerberus-icon.png'>
+                            <div>
+                                <h3>Cerberus</h3>
+                                <p>Protect all your private data with a master password.</p>
+                                
+                                <a class='app-link' href='https://itunes.apple.com/app/cerberus-private-data-protected/id459449492'>
+                                    <picture>
+                                        <source srcset="images/app-store-light.svg" media="(prefers-color-scheme: dark)">
+                                        <img src='images/app-store-dark.svg'>
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-carousel">
+                            <div>
+                                <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/8b/22/b5/8b22b592-af1d-60d0-d776-9e8dcb3c3841/pr_source.png/460x0w.png" alt="Cerberus: Screenshot 1">
+                                <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/6c/30/42/6c3042c3-cfe9-9ff4-67e4-8a3ce5d71d75/pr_source.png/460x0w.png" alt="Cerberus: Screenshot 2">
+                                <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/01/65/96/01659675-7ba0-a9db-1738-235d85bb8ab0/pr_source.png/460x0w.png" alt="Cerberus: Screenshot 3">
+                            </div>
                         </div>
                     </li>
-                    <li class='portifolio-section-item'>
-                        <img class='app-icon' src='images/cerberus-icon.png'>
-                        <div>
-                            <h1>Cerberus</h1>
-                            <a href='https://itunes.apple.com/app/cerberus-private-data-protected/id459449492'>
-                                <img class='app-store-icon' src='images/app-store-icon.svg'>
-                            </a>
+                    <li>
+                        <div class='app-data'>
+                            <img class='app-icon' src='images/paper-emoji-icon.svg'>
+                            <div>
+                                <h3>Paper Emoji</h3>
+                                <p>Create your own emoji and send it to your friends.</p>
+    
+                                <a class='app-link' href='https://itunes.apple.com/app/paper-emoji/id1146948534'>
+                                    <picture>
+                                        <source srcset="images/app-store-light.svg" media="(prefers-color-scheme: dark)">
+                                        <img src='images/app-store-dark.svg'>
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-carousel">
+                            <div>
+                                <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/22/9e/96/229e9685-30cb-df45-5923-b57da4285369/mzl.xnkzegvg.png/460x0w.png" alt="Paper Emoji: Screenshot 1">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple71/v4/00/29/03/00290386-146d-179f-1d3b-b77d9690a69d/mzl.mzkhnzle.png/460x0w.png" alt="Paper Emoji: Screenshot 2">
+                                <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/ba/16/ce/ba16ce96-da21-7d9d-dff0-2ec7761390ff/mzl.fdnxakax.png/460x0w.png" alt="Paper Emoji: Screenshot 3">
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+            <section class='portifolio-section'>
+                <h2 class='portifolio-section-title'>
+                    <hr>
+                    <span>Open Source Projects</span>
+                </h2>
+                <ul class='portifolio-section-list'>
+                    <li>
+                        <div class='app-data'>
+                            <img class='app-icon' src='images/tkgpio-icon.svg'>
+                            <div>
+                                <h3>TkGPIO</h3>
+                                
+                                <p>A Python library to simulate electronic devices connected to the GPIO on a Raspberry Pi.</p>
+                                
+                                <a class='app-link' href='https://github.com/wallysalami/tkgpio'>
+                                    <picture>
+                                        <source srcset="images/github-light.svg" media="(prefers-color-scheme: dark)">
+                                        <img src='images/github-dark.svg'>
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-carousel">
+                            <div>
+                                <img src="images/tkgpio1.png" alt="TkGPIO: Screenshot 1">
+                                <img src="images/tkgpio2.png" alt="TkGPIO: Screenshot 1">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='app-data'>
+                            <img class='app-icon' src='images/gamified-education-icon.svg'>
+                            <div>
+                                <h3>Gamified Education</h3>
+                                <p>A website to help gamified courses, built with Django (Python).</p>
+                                
+                                <a class='app-link' href='https://github.com/wallysalami/gamified-education'>
+                                    <picture>
+                                        <source srcset="images/github-light.svg" media="(prefers-color-scheme: dark)">
+                                        <img src='images/github-dark.svg'>
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-carousel">
+                            <div>
+                                <img src="images/gamified-education1.png" alt="TkGPIO: Screenshot 1">
+                                <img src="images/gamified-education2.png" alt="TkGPIO: Screenshot 1">
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class='portifolio-section'>
+                <h2 class='portifolio-section-title'>
+                    <hr>
+                    <span>Programming Courses</span>
+                </h2>
+                <ul class='portifolio-section-list'>
+                    <li>
+                        <div class='app-data'>
+                            <img class='app-icon' src='images/microcontroladores-icon.svg'>
+                            <div>
+                                <h3>Programação de Microcontroladores</h3>
+                                <p>Hardware and software control with Raspberry Pi and Arduino.</p>
+                                
+                                <a class='app-link' href='https://www.youtube.com/watch?v=FgEMtR9tnl0&list=PL1nEPqXkA0N6TJ2E1L8vlv-NnnceSwgi2'>
+                                    <img src='images/youtube.svg'>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='video-wrapper'>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FgEMtR9tnl0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='app-data'>
+                            <img class='app-icon' src='images/conceitos-icon.svg'>
+                            <div>
+                                <h3>Conceitos de Informática</h3>
+                                <p>An introduction to programming with HTML + CSS + Javascript.</p>
+                                
+                                <a class='app-link' href='https://www.youtube.com/watch?v=aAsfrpmXXsc&list=PL1nEPqXkA0N5P04c51cIJ8s_H8_YTPvwA'>
+                                    <img src='images/youtube.svg'>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='video-wrapper'>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aAsfrpmXXsc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </li>
                 </ul>
